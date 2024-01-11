@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500&display=swap');
+
+:root {
+    --azul-escuro: rgb(14, 9, 50);
+    --dourado: rgb(235, 229, 75);
+    --dourado-light: rgb(255, 250, 97);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: rgb(10, 7, 28);
+}
+
+main {
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+section {
+    padding: 0 20%;
+}
+
+.apresentacao-principal {
+    background: url('../img/BG%20HERO.jpg') center center/cover no-repeat;
+    background-position: center center;
+    height: 600px;
+    position: relative;
+    padding-top: 150px;
+}
+
+.apresentacao-principal img {
+    position: absolute;
+    height: 97%;
+    bottom: 0;
+    right: 12%;
+}
+
+.apresentacao-principal h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--dourado);
+    margin-bottom: 30px;
+}
+
+.apresentacao-principal p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.apresentacao-principal button {
+    padding: 10px 50px;
+    font-weight: bold;
+    border: 2px solid var(--dourado);
+    background-color: var(--dourado);
+    color: var(--azul-escuro);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.apresentacao-principal button:hover {
+    box-shadow: 0px 0px 12px var(--dourado);
+    background-color: var(--dourado-light);
+}
+
+.circulo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--dourado);
+    color: var(--dourado);
+    margin-right: 10px;
+}
+
+.alerta {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.alerta h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--dourado);
+}
+
+.alerta p {font-size: 22px;}
+
+.para-quem {height: 500px; background-color: rgb(6, 4, 18);}
+
+.FAQ {
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-1 li {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    color: rgb(231, 231, 231);
+    margin-bottom: 20px;
+}
+
+.accordion-1 li p {
+    margin: 0px;
+    max-width: 90%;
+}
+
+.resposta {
+    color: rgb(138, 138, 138);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    padding: 0 20px;
+    background-color: rgba(50, 50, 50, 0.2);
+}
+
+.pergunta.ativo .resposta {
+    padding: 10px 20px;
+    max-height: 600px;
+    animation: fade 1s ease-in-out;
+}
+
+.pergunta.ativo svg {
+    transform: rotate(180deg);
+}
+
+.pergunta-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgb(50, 50, 50);
+}
+
+svg {
+    margin-top: 10px;
+    fill: transparent;
+    transition: transform 1s ease-in;
+}
+
+.accordion-1 {
+    width: 300px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--dourado);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    z-index: 995;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    height: 35px;
+}
+
+footer {
+    text-align: center;
+    padding: 0 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 16px;
+    color: rgb(150, 150, 150);
+    background-color: rgb(20, 20, 20);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+
+footer a:hover {
+    color: rgb(200, 200, 200);
+}
+
+@media (min-width: 820px) {
+    .accordion-1 {
+        width: 800px !important;
+    }
+}
+
+@media (min-width: 500px) {
+    .accordion-1 {
+        width: 500px;
+    }
+}
