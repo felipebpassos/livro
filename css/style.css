@@ -52,6 +52,17 @@ section {
     padding: 0 20%;
 }
 
+.fade-in-element {
+    opacity: 0;
+    transition: all 2.5s ease-in-out;
+    transform: translateY(40px);
+}
+
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
 .apresentacao-principal {
     background: url('../img/BG%20HERO.jpg') center center/cover no-repeat;
     background-position: center center;
@@ -137,7 +148,27 @@ section {
     padding-top: 15px;
 }
 
-.alerta-2 h1 {font-weight: 600; text-align: center; margin: 0;}
+.alerta-2 h1 {
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.alerta-2 h1 {
+    transition: transform 1s ease; /* Transição suave de 1 segundo */
+}
+
+/* Keyframes para a animação de escala */
+@keyframes scaleAnimation {
+    0% { transform: scale(1); } /* Escala inicial */
+    50% { transform: scale(1.1); } /* Escala máxima no meio da animação */
+    100% { transform: scale(1); } /* Volta à escala inicial */
+}
+
+/* Aplica a animação ao h1 dentro de .alerta-2 */
+.alerta-2 h1 {
+    animation: scaleAnimation 2s infinite; /* 2 segundos, ciclo infinito */
+}
 
 .persuasao {
     color: var(--azul-escuro);
@@ -182,6 +213,41 @@ section {
     width: 500px;
 }
 
+.cases-de-sucesso {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: rgb(6, 4, 18);
+}
+
+.cases-de-sucesso h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.cases-de-sucesso h4 {
+    color: var(--dourado);
+    margin-bottom: 50px;
+}
+
+.cases-de-sucesso img {
+    display: block;
+    margin: auto;
+    width: 500px;
+}
+
+.cases-de-sucesso span {
+    display: block;
+    color: var(--azul-escuro);
+    background-color: var(--dourado);
+    margin: 40px auto;
+    width: fit-content;
+    padding: 3px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+} 
+.cases-de-sucesso p {max-width: 600px; margin: auto;}
+
 .preços {
     color: var(--azul-escuro);
     padding: 120px 12%;
@@ -190,7 +256,7 @@ section {
 }
 
 .preços .card {
-    max-width: 300px;
+    max-width: 340px;
     min-width: 200px;
     margin: 40px auto;
     padding: 20px 0;
