@@ -3,6 +3,7 @@
 
 :root {
     --azul-escuro: rgb(14, 9, 50);
+    --azul-claro: rgb(46, 29, 168);
     --dourado: rgb(235, 229, 75);
     --dourado-light: rgb(255, 250, 97);
 }
@@ -63,7 +64,8 @@ header::before {
     bottom: 0;
     left: 0;
     z-index: -1;
-    backdrop-filter: blur(4px); /* Ajuste o valor de acordo com o efeito de desfoque desejado */
+    backdrop-filter: blur(4px);
+    /* Ajuste o valor de acordo com o efeito de desfoque desejado */
 }
 
 
@@ -100,14 +102,14 @@ header a {
     margin-right: 40px;
     padding: 2px;
     border-radius: 30px;
-    background: linear-gradient(90deg, #E84E9B 0%, #8A3AE2 100%);
+    background: linear-gradient(90deg, var(--dourado) 0%, var(--azul-claro) 100%);
     text-decoration: none;
     color: white;
     transition: all 0.8s;
 }
 
 header a:hover {
-    background: linear-gradient(90deg, #8A3AE2 0%, #E84E9B 100%);
+    background: linear-gradient(90deg, var(--azul-claro) 0%, var(--dourado) 100%);
     transform: scale(1.1);
 }
 
@@ -213,9 +215,115 @@ section {
 }
 
 .para-quem {
-    height: 500px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    height: fit-content;
     background-color: rgb(6, 4, 18);
 }
+
+.para-quem .content {
+    margin: auto;
+    width: fit-content;
+}
+
+.para-quem h1 {
+    color: var(--dourado);
+    margin-bottom: 80px;
+}
+
+.linha-container {
+    height: fit-content;
+    position: relative;
+}
+
+.linha-do-tempo {
+    display: block;
+    width: 3px;
+    height: 200vh;
+    background-color: #ccc;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: relative;
+    /* Adicionado para posicionar os círculos corretamente */
+}
+
+.progresso {
+    height: 0;
+    background-color: #ffc107;
+    /* Amarelo */
+    transition: height 0.5s ease;
+    position: absolute;
+    /* Adicionado para posicionar os círculos corretamente */
+    width: 100%;
+}
+
+.circulos {
+    width: 12px;
+    height: 12px;
+    background-color: #ffc107;
+    /* Amarelo */
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circulo1 {
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circulo2 {
+    top: 33.3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circulo3 {
+    top: 66.6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circulos .img-card {
+    position: absolute;
+    overflow: hidden;
+    height: 66.67vh;
+    width: 50vh;
+    background-color: var(--dourado);
+    border-radius: 8px;
+    top: 0;
+}
+
+.circulo1 .img-card,
+.circulo3 .img-card {
+    right: 20vh;
+}
+
+.circulo2 .img-card {
+    left: 20vh;
+}
+
+.img-container {
+    height: 75%;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-card .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azul-escuro);
+    height: 25%;
+    width: 100%;
+}
+
+.img-card .texto h4 {text-align: center; font-weight: 700;}
 
 .alerta-2 {
     background-color: var(--dourado);
@@ -231,19 +339,33 @@ section {
 }
 
 .alerta-2 h1 {
-    transition: transform 1s ease; /* Transição suave de 1 segundo */
+    transition: transform 1s ease;
+    /* Transição suave de 1 segundo */
 }
 
 /* Keyframes para a animação de escala */
 @keyframes scaleAnimation {
-    0% { transform: scale(1); } /* Escala inicial */
-    50% { transform: scale(1.1); } /* Escala máxima no meio da animação */
-    100% { transform: scale(1); } /* Volta à escala inicial */
+    0% {
+        transform: scale(1);
+    }
+
+    /* Escala inicial */
+    50% {
+        transform: scale(1.1);
+    }
+
+    /* Escala máxima no meio da animação */
+    100% {
+        transform: scale(1);
+    }
+
+    /* Volta à escala inicial */
 }
 
 /* Aplica a animação ao h1 dentro de .alerta-2 */
 .alerta-2 h1 {
-    animation: scaleAnimation 2s infinite; /* 2 segundos, ciclo infinito */
+    animation: scaleAnimation 2s infinite;
+    /* 2 segundos, ciclo infinito */
 }
 
 .persuasao {
@@ -300,7 +422,8 @@ section {
     width: 500px;
 }
 
-#dislike, #like {
+#dislike,
+#like {
     position: absolute;
     bottom: -35px;
     right: -35px;
@@ -342,8 +465,12 @@ section {
     padding: 3px 20px;
     font-weight: bold;
     border-radius: 5px;
-} 
-.cases-de-sucesso p {max-width: 600px; margin: auto;}
+}
+
+.cases-de-sucesso p {
+    max-width: 600px;
+    margin: auto;
+}
 
 .preços {
     color: var(--azul-escuro);
