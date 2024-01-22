@@ -1,5 +1,5 @@
 // Data alvo (9 de dezembro)
-const targetDate = new Date('December 11, 2023 09:00:00').getTime();
+const targetDate = new Date('March 11, 2024 09:00:00').getTime();
 
 const interval = setInterval(function () {
     // Data atual

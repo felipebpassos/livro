@@ -20,20 +20,30 @@
 
 <body>
 
+    <header>
+        <div id="countdown"></div>
+        <a href="https://checkout.perfectpay.com.br/pay/PPU38CNI67F" id="linkCompra">
+            <div><img src="./img/two-movie-tickets.png" height="18" style="margin-right: 10px;" alt="">Garanta sua
+                vaga</div>
+        </a>
+    </header>
+
     <main>
 
         <!-- Seção de Apresentação Principal -->
         <section class="apresentacao-principal">
             <img src="./img/Foto Brandini HERO.png"
                 alt="Autor do livro Roberto Brandini e O Último Livro dos Investimentos">
-            <h1>O Último Livro<br>dos Investimentos</h1>
-            <p><span style="font-weight: bold; color: var(--dourado);">Finalmente! </span>Alguém resumiu tudo
-                que<br>você precisa saber para investir.</p>
-            <div style="width: fit-content;">
-                <a href="#"><button class="comprar-btn">ADQUIRIR AGORA!</button></a>
-                <span style="margin:auto; display: flex; font-size: 13px; width: fit-content;">
-                    <div class="circulo">+</div>GARANTIA DE 7 DIAS
-                </span>
+            <div class="fade-in-element">
+                <h1>O Último Livro<br>dos Investimentos</h1>
+                <p><span style="font-weight: bold; color: var(--dourado);">Finalmente! </span>Alguém resumiu tudo
+                    que<br>você precisa saber para investir.</p>
+                <div style="width: fit-content;">
+                    <a href="#"><button class="comprar-btn">ADQUIRIR AGORA!</button></a>
+                    <span style="margin:auto; display: flex; font-size: 13px; width: fit-content;">
+                        <div class="circulo">+</div>GARANTIA DE 7 DIAS
+                    </span>
+                </div>
             </div>
         </section>
 
@@ -71,14 +81,16 @@
                     <p>Até porque é um tédio baixar <br>um livro e ele vir só escrito:</p>
                 </div>
                 <img src="./img/Eu também.png" alt="Exemplo de um livro entediante sem ilustrações e gráficos">
+                <img id="dislike" src="./img/Dislike.png" alt="Dislike - Feedback negativo">
             </div>
             <div class="content">
                 <div class="texto">
                     <h1>Por isso,</h1>
                     <p>desenvolvi um método <br>100% dinâmico com imagens</p>
                 </div>
-                <img src="./img/Por isso 01.png" style="margin-bottom: 60px;" alt="">
-                <img src="./img/Por isso 02.png" alt="">
+                <img src="./img/Por isso 01.png" style="margin-bottom: 60px;" alt="O Último Livro dos Investimentos - repleto de ilustrações e gráficos que facilitarão o entendimento">
+                <img src="./img/Por isso 02.png" style="margin-bottom: 60px;" alt="O Último Livro dos Investimentos - repleto de ilustrações e gráficos que facilitarão o entendimento">
+                <img id="like" src="./img/Like.png" alt="Like - Feedback positivo">
             </div>
         </section>
 
@@ -323,7 +335,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
     <script src="./js/tempo.js"></script>
     <script src="./js/header-effect.js"></script>
     <script src="./js/fade-in-element.js"></script>
