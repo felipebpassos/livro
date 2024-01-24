@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="O livro que você esperava para crescer nos investimentos.">
+    <meta name="author" content="Roberto Brandini | Landing Page desenvolvida por Simplify Web">
+    <meta name="keywords" content="livro, book, investimentos, investir, aprender, fundos imobiliários, renda fixa, bolsa de valores, ações, taxa selic, taxa de juros, dinheiro, ganhar dinheiro, money, investment">
+    <meta name="robots" content="index,follow">
+    
     <title>O Último Livro dos Investimentos</title>
 
     <link rel="icon" href="./img/favicon.ico">
@@ -22,7 +26,7 @@
 
     <header>
         <div id="countdown"></div>
-        <a href="https://checkout.perfectpay.com.br/pay/PPU38CNI67F" id="linkCompra">
+        <a class="linkCompra">
             <div><img src="./img/two-movie-tickets.png" height="18" style="margin-right: 10px;" alt="">Garanta já o
                 seu</div>
         </a>
@@ -36,11 +40,11 @@
                 alt="Autor do livro Roberto Brandini e O Último Livro dos Investimentos">
             <div class="fade-in-element">
                 <h1>O Último Livro<br>dos Investimentos</h1>
-                <p><span style="font-weight: bold; color: var(--dourado);">Finalmente! </span>Alguém resumiu tudo
+                <p><span style="font-weight: bold; color: var(--dourado);">Finalmente! </span>Alguém resumiu tudo o
                     que<br>você precisa saber para investir.</p>
                 <div style="width: fit-content;">
-                    <a href="#"><button class="comprar-btn">ADQUIRIR AGORA!</button></a>
-                    <span style="margin:auto; display: flex; font-size: 13px; width: fit-content;">
+                    <a class="linkCompra"><button class="comprar-btn">ADQUIRIR AGORA!</button></a>
+                    <span class="garantia">
                         <div class="circulo">+</div>GARANTIA DE 7 DIAS
                     </span>
                 </div>
@@ -122,7 +126,7 @@
         <section class="persuasao-2">
             <div class="content">
                 <div class="texto">
-                    <h1>EU TAMBÉM!</h1>
+                    <h1>Eu também!</h1>
                     <p>Até porque é um tédio baixar <br>um livro e ele vir só escrito:</p>
                 </div>
                 <img src="./img/Eu também.png" alt="Exemplo de um livro entediante sem ilustrações e gráficos">
@@ -133,8 +137,10 @@
                     <h1>Por isso,</h1>
                     <p>desenvolvi um método <br>100% dinâmico com imagens</p>
                 </div>
-                <img src="./img/Por isso 01.png" style="margin-bottom: 60px;" alt="O Último Livro dos Investimentos - repleto de ilustrações e gráficos que facilitarão o entendimento">
-                <img src="./img/Por isso 02.png" style="margin-bottom: 60px;" alt="O Último Livro dos Investimentos - repleto de ilustrações e gráficos que facilitarão o entendimento">
+                <img src="./img/Por isso 01.png" style="margin-bottom: 60px;"
+                    alt="O Último Livro dos Investimentos - repleto de ilustrações e gráficos que facilitarão o entendimento">
+                <img src="./img/Por isso 02.png" style="margin-bottom: 60px;"
+                    alt="O Último Livro dos Investimentos - repleto de ilustrações e gráficos que facilitarão o entendimento">
                 <img class="fade-in-element" id="like" src="./img/Like.png" alt="Like - Feedback positivo">
             </div>
         </section>
@@ -155,59 +161,59 @@
         </section>
 
         <!-- Preços -->
-        <section class="preços">
+        <section class="preços" id="precosSection">
             <div class="container">
                 <div class="row fade-in-element">
-                    <div class="col-md-4">
+                    <div class="col-xs-4" style="min-width: 280px;">
                         <div class="card">
                             <h4>Versão Física</h4>
                             <img src="./img/livro físico 2.png" alt="Livro Físico/Impresso Versão Colorida">
                             <div class="texto">
                                 <span style="font-size: 15px; text-decoration: line-through;">De R$ 00,00 por
                                     <br></span>
-                                <span style="font-size: 22px;">12X DE <span style="font-size: 32px;">R$00,00
+                                <span style="font-size: 22px;">12X DE <span style="font-size: 32px;">R$9,74
                                         <br></span></span>
-                                <span style="font-size: 15px;">ou R$ 00,00 à vista<span
-                                        style="display: block; font-size: 13px;">(R$ 00,00 reais de
+                                <span style="font-size: 15px;">ou R$ 97,00 à vista<span
+                                        style="display: block; font-size: 13px;">(R$ 19,88 de
                                         desconto)</span></span>
                             </div>
-                            <a href="#"><button class="comprar-btn">ADQUIRA JÁ O SEU</button></a>
+                            <a href="https://go.perfectpay.com.br/PPU38CNT9PS"><button class="comprar-btn">ADQUIRA JÁ O SEU</button></a>
                             <img class="formas-pagamento" src="./img/Selos de pagamento.png"
                                 alt="Formas de pagamento (cartão, boleto, PIX)">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xs-4" style="min-width: 280px;">
                         <div class="card">
                             <h4>Versão P&B</h4>
                             <img src="./img/Livro PB.png" alt="Livro Físico/Impresso Versão Preto e Branco">
                             <div class="texto">
                                 <span style="font-size: 15px; text-decoration: line-through;">De R$ 00,00 por
                                     <br></span>
-                                <span style="font-size: 22px;">12X DE <span style="font-size: 32px;">R$00,00
+                                <span style="font-size: 22px;">12X DE <span style="font-size: 32px;">R$7,73
                                         <br></span></span>
-                                <span style="font-size: 15px;">ou R$ 00,00 à vista<span
-                                        style="display: block; font-size: 13px;">(R$ 00,00 reais de
+                                <span style="font-size: 15px;">ou R$ 77,00 à vista<span
+                                        style="display: block; font-size: 13px;">(R$ 15,76 de
                                         desconto)</span></span>
                             </div>
-                            <a href="#"><button class="comprar-btn">ADQUIRA JÁ O SEU</button></a>
+                            <a href="https://go.perfectpay.com.br/PPU38CNT9PQ"><button class="comprar-btn">ADQUIRA JÁ O SEU</button></a>
                             <img class="formas-pagamento" src="./img/Selos de pagamento.png"
                                 alt="Formas de pagamento (cartão, boleto, PIX)">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xs-4" style="min-width: 280px;">
                         <div class="card">
                             <h4>Versão Digital</h4>
                             <img src="./img/livro celular 1.png" alt="Livro Versão Digital (PDF)" style="width: 32.5%;">
                             <div class="texto">
                                 <span style="font-size: 15px; text-decoration: line-through;">De R$ 00,00 por
                                     <br></span>
-                                <span style="font-size: 22px;">12X DE <span style="font-size: 32px;">R$00,00
+                                <span style="font-size: 22px;">9X DE <span style="font-size: 32px;">R$6,03
                                         <br></span></span>
-                                <span style="font-size: 15px;">ou R$ 00,00 à vista<span
-                                        style="display: block; font-size: 13px;">(R$ 00,00 reais de
+                                <span style="font-size: 15px;">ou R$ 47,00 à vista<span
+                                        style="display: block; font-size: 13px;">(R$ 7,27 de
                                         desconto)</span></span>
                             </div>
-                            <a href="#"><button class="comprar-btn">ADQUIRA JÁ O SEU</button></a>
+                            <a href="https://go.perfectpay.com.br/PPU38CM3GUT"><button class="comprar-btn">ADQUIRA JÁ O SEU</button></a>
                             <img class="formas-pagamento" src="./img/Selos de pagamento.png"
                                 alt="Formas de pagamento (cartão, boleto, PIX)">
                         </div>
@@ -246,10 +252,9 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>A Todo Mundo Pode Investir é o evento de investimentos mais completo de
-                                    Aracaju! Um encontro único com grandes nomes da área, repleto de insights valiosos e
-                                    oportunidades de
-                                    networking exclusivas. Mostraremos a você que investir é para todo mundo.</p><br>
+                                <p>Sim, este livro é especialmente projetado para iniciantes no mundo dos investimentos.
+                                    Repleto de imagens, abrange desde a história do dinheiro até orientações sobre como
+                                    investir de forma independente.</p><br>
                             </div>
                         </li>
 
@@ -265,10 +270,13 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Não! No Todo Mundo Pode Investir exploramos muito essa questão. Criatividade e
-                                    organização se aprende e se exercita. Neste
-                                    encontro, você terá uma
-                                    ótima base e bons exemplos para aplicar no seu dia a dia.</p>
+                                <p>Não é necessário ter uma grande quantia para começar a investir. Com apenas R$ 1,00,
+                                    você pode iniciar a construção da sua carteira com produtos de renda fixa. A partir
+                                    de R$ 10,00, já é possível diversificar com fundos imobiliários. Mesmo com R$ 1,00,
+                                    você pode participar da Bolsa de Valores investindo em algumas ações. O livro aborda
+                                    a construção completa de uma carteira de investimentos, explicando termos como Bolsa
+                                    de Valores, renda fixa e fundos imobiliários. Isso proporciona o conforto e a
+                                    segurança necessários para investir em sua carteira.</p>
                                 <br>
                             </div>
                         </li>
@@ -284,18 +292,10 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Após clicar no botão "Garanta sua Vaga", você será direcionado(a) para a página de
-                                    checkout da Perfect Pay
-                                    onde deverá inserir os dados de pagamento em cartão, boleto ou Pix.</p><br>
-                                <p>Assim que o pagamento for confirmado pelo banco você receberá um e-mail com uma
-                                    mensagem
-                                    de
-                                    confirmação, garantindo sua entrada na Todo Mundo Pode Investir. Pronto, depois é só
-                                    aproveitar!
-                                </p>
-                                <br>
-                                <p>Caso tenha qualquer dúvida é só escrever pra gente: (79) 9 8135-8136</p>
-                                <br>
+                                <p>Oferecemos duas opções para você escolher. Pode optar pela versão online em PDF do
+                                    livro "Último Livro dos Investimentos", ou escolher entre as opções impressas: preto
+                                    e branco ou colorido. A versão impressa será entregue diretamente na sua porta,
+                                    apresentada em formato de apostila.</p>
                             </div>
                         </li>
                     </div>
@@ -310,11 +310,14 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Não. Todos os bancos brasileiros tem opções de investimento. Mas, no Todo Mundo Pode
-                                    Investir,
-                                    você verá quais as melhores opções para fazer tanto seu primeiro investimento como
-                                    também para os daqueles quem
-                                    já começaram a investir.
+                                <p>Não, você não receberá uma carteira de investimentos pronta junto com o livro, pois o
+                                    conteúdo do livro é atemporal. Os investimentos recomendados podem variar a cada
+                                    mês. O objetivo é que você aprenda sobre o universo dos investimentos, compreendendo
+                                    aspectos como fundos imobiliários, renda fixa e ações. Após adquirir esse
+                                    conhecimento, você estará apto a construir sua própria carteira de investimentos.
+                                    Além disso, pode buscar orientações através do WhatsApp com a Brandini, em outros
+                                    contatos, ou tomar decisões através do nosso Instagram ou grupo no WhatsApp,
+                                    inclusive consultando investidores mais experientes.
                                 </p>
                                 <br>
                             </div>
@@ -331,11 +334,9 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Não. Todos os bancos brasileiros tem opções de investimento. Mas, no Todo Mundo Pode
-                                    Investir,
-                                    você verá quais as melhores opções para fazer tanto seu primeiro investimento como
-                                    também para os daqueles quem
-                                    já começaram a investir.
+                                <p>Sim, o pagamento é seguro! Utilizando a PerfectPay, nossa plataforma de intermediação
+                                    de vendas registrada no Banco Central, garantimos total segurança e cumprimos todas
+                                    as regulamentações estabelecidas pela Lei Brasileira.
                                 </p>
                                 <br>
                             </div>
@@ -352,11 +353,10 @@
                                 </svg>
                             </div>
                             <div class="resposta">
-                                <p>Não. Todos os bancos brasileiros tem opções de investimento. Mas, no Todo Mundo Pode
-                                    Investir,
-                                    você verá quais as melhores opções para fazer tanto seu primeiro investimento como
-                                    também para os daqueles quem
-                                    já começaram a investir.
+                                <p>Após a sua escolha da versão preto e branco ou colorida, a equipe entrara em contato
+                                    para obter o seu endereço. Em seguida, procederemos com o envio do produto
+                                    diretamente para a sua casa. Fique à vontade para nos contatar se precisar de mais
+                                    assistência ou informações.
                                 </p>
                                 <br>
                             </div>
@@ -374,14 +374,15 @@
 
     <footer>
         <div class="copyright">
-            &copy; 2023, O Último Livro dos Investimentos | Desenvolvida por <a
+            &copy; 2024, O Último Livro dos Investimentos | Desenvolvida por <a
                 href="https://www.instagram.com/simplifyweb/" target="_blank">Simplify Web</a>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    
+
+    <script src="./js/btn-compra.js"></script>
     <script src="./js/tempo.js"></script>
     <script src="./js/header-effect.js"></script>
     <script src="./js/linha_progresso.js"></script>

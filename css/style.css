@@ -19,6 +19,10 @@ body {
     background: rgb(10, 7, 28);
 }
 
+a {cursor: pointer;}
+
+ul {padding: 0;}
+
 /* Estilizando a barra de rolagem lateral */
 
 ::-webkit-scrollbar {
@@ -144,9 +148,9 @@ section {
 .apresentacao-principal {
     background: url('../img/BG%20HERO.jpg') center center/cover no-repeat;
     background-position: center center;
-    height: 600px;
+    height: 45vw;
     position: relative;
-    padding-top: 150px;
+    padding-top: 10vw;
 }
 
 .apresentacao-principal img {
@@ -157,26 +161,27 @@ section {
 }
 
 .apresentacao-principal h1 {
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: 700;
     color: var(--dourado);
-    margin-bottom: 30px;
+    margin-bottom: 2.3vw;
 }
 
 .apresentacao-principal p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 1.4vw;
+    margin-bottom: 2.3vw;
 }
 
 .comprar-btn {
-    padding: 10px 50px;
+    font-size: 1.3vw;
+    padding: 0.5vw 4.2vw;
     font-weight: bold;
     border: 2px solid var(--dourado);
     background-color: var(--dourado);
     color: var(--azul-escuro);
-    border-radius: 8px;
+    border-radius: 0.5vw;
     transition: all 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 1.3vw;
 }
 
 .comprar-btn:hover {
@@ -185,20 +190,28 @@ section {
     border: 2px solid var(--dourado-light);
 }
 
+.garantia {
+    margin: auto;
+    display: flex;
+    font-size: 0.9vw;
+    width: fit-content;
+}
+
 .circulo {
-    width: 20px;
-    height: 20px;
+    width: 1.4vw;
+    height: 1.4vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--dourado);
+    border: 0.1vw solid var(--dourado);
     color: var(--dourado);
-    margin-right: 10px;
+    margin-right: 0.6vw;
 }
 
 .alerta {
-    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -239,7 +252,7 @@ section {
 .linha-do-tempo {
     display: block;
     width: 3px;
-    height: 200vh;
+    height: 150vh;
     background-color: #ccc;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -288,8 +301,8 @@ section {
 .circulos .img-card {
     position: absolute;
     overflow: hidden;
-    height: 66.67vh;
-    width: 50vh;
+    height: 50vh;
+    width: 37.5vh;
     background-color: var(--dourado);
     border-radius: 8px;
     top: 0;
@@ -297,11 +310,11 @@ section {
 
 .circulo1 .img-card,
 .circulo3 .img-card {
-    right: 20vh;
+    right: 10vh;
 }
 
 .circulo2 .img-card {
-    left: 20vh;
+    left: 10vh;
 }
 
 .img-container {
@@ -323,13 +336,17 @@ section {
     width: 100%;
 }
 
-.img-card .texto h4 {text-align: center; font-weight: 700;}
+.img-card .texto h4 {
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+}
 
 .alerta-2 {
     background-color: var(--dourado);
     color: var(--azul-escuro);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .alerta-2 h1 {
@@ -483,8 +500,8 @@ section {
 }
 
 .preços .card {
-    max-width: 340px;
-    min-width: 200px;
+    max-width: 360px;
+    min-width: 250px;
     margin: 40px auto;
     padding: 20px 0;
     border-radius: 15px;
@@ -664,12 +681,283 @@ footer a:hover {
 
 @media (min-width: 820px) {
     .accordion-1 {
-        width: 800px !important;
+        width: 100%;
     }
 }
 
 @media (min-width: 500px) {
     .accordion-1 {
-        width: 500px;
+        width: 100%;
     }
+}
+
+@media (max-width: 900px) {
+
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .apresentacao-principal {
+        height: 500px;
+        padding-top: 90px;
+    }
+
+    .apresentacao-principal img {
+        right: 5%;
+    }
+
+    .apresentacao-principal h1 {
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+
+    .apresentacao-principal p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .comprar-btn {
+        font-size: 13px;
+        padding: 4.5px 37px;
+        border-radius: 5px;
+        margin-bottom: 18px;
+    }
+
+    .circulo {
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--dourado);
+        margin-right: 5px;
+    }
+
+    .garantia {
+        font-size: 11px;
+    }
+
+    .persuasao {
+        height: 400px;
+        padding-top: 20px;
+    }
+
+    .persuasao img {
+        height: 380px;
+    }
+
+    .persuasao h1 {
+        font-size: 32px;
+    }
+
+    .persuasao p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .apresentacao-principal img {
+        right: -5%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .persuasao {
+        height: 400px;
+        padding-top: 40px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .persuasao img {
+        margin-left: -60px;
+        height: 360px;
+        margin-right: 10px;
+    }
+
+    .persuasao h1 {
+        font-size: 23px;
+    }
+
+    .persuasao p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    header {display: none !important;}
+
+    .apresentacao-principal img {
+        right: -12%;
+    }
+}
+
+@media (max-width: 430px) {
+
+    section {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .apresentacao-principal img {
+        right: -33%;
+    }
+
+    .apresentacao-principal h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .apresentacao-principal p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .comprar-btn {
+        font-size: 12px;
+        padding: 4px 20px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .garantia {
+        font-size: 10px;
+    }
+
+    .alerta h1 {
+        font-size: 35px;
+    }
+
+    .alerta p {
+        font-size: 14px;
+    }
+
+    .alerta-2 h1 {
+        font-size: 28px;
+    }
+
+    .persuasao {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .persuasao img {
+        margin-right: -10px;
+    }
+
+    .persuasao h1 {
+        font-size: 20px;
+    }
+
+    .persuasao p {
+        font-size: 12px;
+    }
+
+    .persuasao-2 {
+        padding-bottom: 60px;
+        background-color: rgb(6, 4, 18);
+    }
+
+    .persuasao-2 .content img {
+        margin: 30px auto;
+        width: 350px;
+    }
+
+    #dislike,
+    #like {
+        bottom: -20px;
+        right: -20px;
+        width: 45px;
+    }
+
+    .cases-de-sucesso h1 {
+        font-size: 45px;
+    }
+    
+    .cases-de-sucesso h4 {
+        font-size: 18px;
+    }
+    
+    .cases-de-sucesso img {
+        width: 370px;
+    }
+
+    .preços {
+        padding-bottom: 150px;
+    }
+
+    .quem-sou {
+        height: 500px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .quem-sou img {
+        margin-left: -70px;
+        margin-right: 20px;
+        height: 500px;
+    }
+
+    .quem-sou .texto h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .quem-sou .texto p {
+        font-size: 10px;
+    }
+
+    .para-quem h1 {
+        margin-bottom: 50px;
+    }
+    
+    .linha-do-tempo {
+        height: 80vh;
+    }
+
+    .circulos .img-card {
+        height: 26.66vh;
+        width: 20vh;
+    }
+    
+    .circulo1 .img-card,
+    .circulo3 .img-card {
+        right: 4vh;
+    }
+    
+    .circulo2 .img-card {
+        left: 4vh;
+    }
+
+    .img-card .texto h4 {
+        font-size: 12px;
+    }
+
+    .pergunta-header {
+        font-size: 14px;
+    }
+
+    .resposta {
+        font-size: 13px;
+    }
+
+    footer {font-size: 13px;}
+}
+
+@media (max-width: 400px) {
+
+    .apresentacao-principal img {
+        right: -43%;
+    }
+
+    .persuasao-2 .content img {
+        margin: 30px auto;
+        width: 320px;
+    }
+
+    .cases-de-sucesso img {
+        width: 320px;
+    }
+
 }
